@@ -1,4 +1,4 @@
-package pl.akademiaandroida.rickandmorty
+package pl.akademiaandroida.rickandmorty.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_character.view.*
+import pl.akademiaandroida.rickandmorty.Character
+import pl.akademiaandroida.rickandmorty.R
 
 class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
 
@@ -25,7 +27,9 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHold
             .from(parent.context)
             .inflate(R.layout.item_character, parent, false)
 
-        return CharacterViewHolder(itemView)
+        return CharacterViewHolder(
+            itemView
+        )
     }
 
     override fun getItemCount(): Int = characters.size
