@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initRecycler()
-        viewModel.onViewCreated()
         observeData()
         observeError()
+        viewModel.onViewCreated()
     }
 
     private fun observeError() {
