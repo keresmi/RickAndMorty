@@ -2,6 +2,9 @@
 Rick and Morty is an Android app written in Kotlin to demonstrate communication with external REST API. The app fetches 
 characters of "Rick and Morty" cartoon and displays it in a grid. 
 
+## Kotlin Coroutines Example
+Check the [coroutines](https://github.com/keresmi/RickAndMorty/tree/coroutines) branch with an example of how to use Retrofit combined with Kotlin Coroutines.
+
 ## API Documentation
 [Rick and Morty API](https://rickandmortyapi.com/documentation)
 
